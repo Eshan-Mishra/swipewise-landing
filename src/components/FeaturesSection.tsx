@@ -69,19 +69,19 @@ const FeaturesSection: React.FC = () => {
                     </p>
                 </div>
 
-                <div ref={gridRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+                <div ref={gridRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8">
                     {features.map((f) => (
                         <div
                             key={f.title}
-                            className="group rounded-2xl p-6 h-full flex flex-col
-                                bg-surface/60 border border-white/[0.06]
-                                backdrop-blur-sm cursor-pointer
-                                transition-all duration-300
-                                hover:border-primary/20 hover:bg-surface/80
-                                hover:shadow-[0_0_30px_-8px_rgba(19,236,106,0.15)]"
+                            className="group relative rounded-[2px] p-8 h-full flex flex-col
+                                bg-surface/40 border border-white/[0.15]
+                                backdrop-blur-md cursor-pointer
+                                transition-all duration-500 ease-out transform
+                                hover:bg-surface/60 hover:border-primary/40
+                                hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5),0_0_20px_-5px_rgba(19,236,106,0.15)]"
                         >
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/[0.08] flex items-center justify-center transition-colors duration-300 group-hover:border-primary/20">
+                            <div className="flex items-center gap-4 mb-6 relative z-10">
+                                <div className="w-12 h-12 rounded-[2px] bg-white/[0.04] border border-white/[0.15] flex items-center justify-center transition-all duration-500 group-hover:border-primary/40 group-hover:scale-110">
                                     {f.icon}
                                 </div>
                                 <span className="text-[10px] font-semibold uppercase tracking-widest text-primary/70">

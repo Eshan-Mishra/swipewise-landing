@@ -49,18 +49,19 @@ const HowItWorks: React.FC = () => {
                     {steps.map((step) => (
                         <div
                             key={step.num}
-                            className="group rounded-2xl p-6 sm:p-8 h-full flex flex-col
-                                bg-surface/60 border border-white/[0.06]
-                                backdrop-blur-sm cursor-pointer
-                                transition-all duration-300
-                                hover:border-primary/20 hover:bg-surface/80"
+                            className="group relative rounded-[2px] p-6 sm:p-10 h-full flex flex-col
+                                bg-surface/40 border border-white/[0.15]
+                                backdrop-blur-md cursor-pointer
+                                transition-all duration-500 ease-out transform
+                                hover:bg-surface/60 hover:border-primary/40
+                                hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5),0_0_20px_-5px_rgba(19,236,106,0.15)]"
                         >
-                            <div className="flex items-center gap-3 mb-4">
-                                <span className="text-3xl font-bold text-primary/30 font-display">{step.num}</span>
-                                <div className="h-px flex-1 bg-white/[0.06]" />
+                            <div className="flex items-center gap-4 mb-6">
+                                <span className="text-4xl font-bold text-primary/40 font-display transition-colors duration-500 group-hover:text-primary">{step.num}</span>
+                                <div className="h-px flex-1 bg-white/[0.15] transition-colors duration-500 group-hover:bg-primary/40" />
                             </div>
-                            <h3 className="text-text-primary font-bold text-lg mb-3">{step.title}</h3>
-                            <p className="text-text-secondary text-sm leading-relaxed flex-1">{step.body}</p>
+                            <h3 className="text-xl text-text-primary font-bold mb-4 tracking-tight">{step.title}</h3>
+                            <p className="text-base text-text-secondary leading-relaxed flex-1 opacity-80 group-hover:opacity-100 transition-opacity duration-500">{step.body}</p>
                         </div>
                     ))}
                 </div>

@@ -46,19 +46,20 @@ const BentoFeatures: React.FC = () => {
                     {"What Velox Does"}
                 </h2>
 
-                {/* Bento Grid */}
-                <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[260px] md:auto-rows-[280px]">
-                    {cards.map((card) => (
+                {/* Asymmetric Fragmented Layout */}
+                <div ref={gridRef} className="flex flex-col md:flex-row flex-wrap gap-8 justify-center">
+                    {cards.map((card, index) => (
                         <div
                             key={card.title}
                             className={`
-                group relative overflow-hidden rounded-2xl
-                bg-surface/60 border border-white/[0.06]
-                backdrop-blur-sm
-                transition-all duration-300
-                hover:border-primary/20 hover:bg-surface/80
+                group relative overflow-hidden rounded-[2px]
+                bg-surface/40 border border-white/[0.15]
+                backdrop-blur-md
+                transition-all duration-500
+                hover:border-primary/40 hover:bg-surface/80
                 cursor-pointer
-                ${card.span}
+                h-[300px] w-full 
+                ${index === 0 ? 'md:w-[55%]' : index === 1 ? 'md:w-[40%]' : index === 2 ? 'md:w-[35%]' : 'md:w-[60%]'}
               `}
                         >
                             {/* 3D image */}
@@ -71,11 +72,11 @@ const BentoFeatures: React.FC = () => {
                             </div>
 
                             {/* Content overlay */}
-                            <div className="relative z-10 h-full flex flex-col justify-end p-6">
-                                <div className="bg-gradient-to-t from-background/90 via-background/60 to-transparent absolute inset-0 rounded-2xl" />
-                                <div className="relative">
-                                    <h3 className="text-xl font-bold text-text-primary mb-2">{card.title}</h3>
-                                    <p className="text-sm text-text-secondary leading-relaxed max-w-xs">{card.body}</p>
+                            <div className="relative z-10 h-full flex flex-col justify-end p-8">
+                                <div className="bg-gradient-to-t from-background/95 via-background/70 to-transparent absolute inset-0 rounded-[2px]" />
+                                <div className="relative transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                    <h3 className="text-2xl font-bold text-text-primary mb-3 tracking-tight">{card.title}</h3>
+                                    <p className="text-base text-text-secondary leading-relaxed max-w-sm opacity-80 group-hover:opacity-100 transition-opacity duration-500">{card.body}</p>
                                 </div>
                             </div>
                         </div>

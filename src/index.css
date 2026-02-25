@@ -35,40 +35,46 @@
 
 @layer utilities {
   .glass-card {
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Raw, solid borders */
+    border-radius: 4px; /* Sharper geometry */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   .glass-card-hover {
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    transition: all 0.3s ease;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Raw, solid borders */
+    border-radius: 4px; /* Sharper geometry */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .glass-card-hover:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.14);
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(19, 236, 106, 0.1);
   }
 
   .hero-glow {
     background: radial-gradient(
       ellipse 60% 50% at 50% 50%,
-      rgba(37, 99, 235, 0.12) 0%,
-      rgba(19, 236, 106, 0.06) 40%,
-      transparent 70%
+      rgba(19, 236, 106, 0.15) 0%,
+      /* primary neon green */ rgba(37, 99, 235, 0.08) 40%,
+      /* deep blue */ transparent 70%
     );
   }
 
   .sapphire-glow {
     box-shadow:
-      0 0 60px rgba(37, 99, 235, 0.15),
-      0 0 120px rgba(37, 99, 235, 0.08);
+      0 0 60px rgba(19, 236, 106, 0.15),
+      0 0 120px rgba(19, 236, 106, 0.08); /* changed to primary green instead of previous color for consistency */
   }
 
   .text-gradient-hero {
