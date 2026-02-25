@@ -1,0 +1,18 @@
+# Velox
+> India's First Cross-Bank Reward Optimization Engine
+
+## Overview
+Velox is an AI-powered credit card optimization engine that maximizes your points, miles, and cashback across all Indian banks on every single transaction. Banks design reward systems for breakage—we design them for you.
+
+## Core Features
+- **Real-Time AI Optimizer:** Evaluates merchants, merchant categories (MCC), and platform rules to recommend exactly which credit card to use at checkout, maximizing potential rewards.
+- **Predictive Analytics:** Forecasting algorithms anticipate your future spending limits, optimal card usage patterns, and critical reward expirations.
+- **Cross-Bank Sync:** A unified ledger that brings all your accounts and loyalty balance currencies (HDFC Bank, SBI Card, Axis Bank, ICICI Bank, Amex, etc.) onto a single, zero-trust security platform without compromising your banking credentials.
+- **Zero-Trust Architecture:** Ensures privacy by relying on local computation or highly encrypted state variables where appropriate. 
+
+## Pricing
+Currently offering a waitlist for early access. Use the website to sign up.
+
+## Contact & Links
+- Website: https://velox.in/
+- Target Audience: Indian credit card users looking for point optimization.

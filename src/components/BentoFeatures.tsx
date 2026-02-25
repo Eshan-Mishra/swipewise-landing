@@ -66,7 +66,7 @@ const BentoFeatures: React.FC = () => {
                             <div className="absolute inset-0 flex items-center justify-center opacity-30 group-hover:opacity-50 transition-opacity duration-500">
                                 <img
                                     src={card.image}
-                                    alt={card.title}
+                                    alt={`Visual representation of ${card.title} feature`}
                                     className="w-full h-full object-cover"
                                 />
                             </div>

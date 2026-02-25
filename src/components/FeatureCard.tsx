@@ -12,7 +12,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, ima
         <div className="aspect-[4/3] overflow-hidden bg-background">
             <img
                 src={image}
-                alt={title}
+                alt={`Illustration of Velox feature: ${title}`}
                 className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
                 loading="lazy"
             />
