@@ -5,7 +5,7 @@ const Footer: React.FC = () => (
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
             {/* Wordmark */}
             <div className="flex items-center gap-3">
-                <img src="/logo.png" alt="SwipeWise Logo" className="h-9 w-auto" />
+                <img src="/logo.png" alt="SwipeWise Logo" className="h-12 md:h-14 w-auto object-contain" />
                 <span className="text-text-muted text-xs">·</span>
                 <span className="text-text-muted text-xs">Spend smart. Own every reward.</span>
             </div>

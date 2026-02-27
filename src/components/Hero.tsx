@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
                 <div ref={leftRef} className="order-2 lg:order-1 text-center lg:text-left">
                     {/* Logo */}
                     <div className="flex items-center justify-center lg:justify-start mb-8">
-                        <img src="/logo.png" alt="SwipeWise Logo" className="h-10 w-auto" />
+                        <img src="/logo.png" alt="SwipeWise Logo" className="h-16 md:h-20 w-auto object-contain" />
                     </div>
 
                     {/* Eyebrow */}
