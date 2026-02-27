@@ -4,9 +4,8 @@ const Footer: React.FC = () => (
     <footer className="border-t border-white/[0.06] py-12 px-5">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
             {/* Wordmark */}
-            <div className="flex items-center gap-2">
-                <img src="/logo.png" alt="SwipeWise Logo" className="w-7 h-7" />
-                <span className="text-primary font-bold text-xl tracking-tight uppercase">SwipeWise</span>
+            <div className="flex items-center gap-3">
+                <img src="/logo.png" alt="SwipeWise Logo" className="h-9 w-auto" />
                 <span className="text-text-muted text-xs">·</span>
                 <span className="text-text-muted text-xs">Spend smart. Own every reward.</span>
             </div>

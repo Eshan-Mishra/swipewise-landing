@@ -52,9 +52,8 @@ const Hero: React.FC = () => {
                 {/* Left: Copy */}
                 <div ref={leftRef} className="order-2 lg:order-1 text-center lg:text-left">
                     {/* Logo */}
-                    <div className="flex items-center justify-center lg:justify-start gap-2 mb-8">
-                        <img src="/logo.png" alt="SwipeWise Logo" className="w-8 h-8" />
-                        <span className="text-primary font-bold text-2xl tracking-tight uppercase">SwipeWise</span>
+                    <div className="flex items-center justify-center lg:justify-start mb-8">
+                        <img src="/logo.png" alt="SwipeWise Logo" className="h-10 w-auto" />
                     </div>
 
                     {/* Eyebrow */}
