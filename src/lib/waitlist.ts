@@ -95,5 +95,13 @@ export async function joinWaitlist(
     return { ok: false, error: 'Something went wrong. Please try again.' };
   }
 
+  window.dispatchEvent(new Event('waitlist-signup'));
   return { ok: true };
+}
+
+// ── Waitlist count ──────────────────────────────────────
+export async function getWaitlistCount(): Promise<number> {
+  const { data, error } = await supabase.rpc('get_waitlist_count');
+  if (error || data == null) return 0;
+  return data as number;
 }

@@ -8,6 +8,7 @@ import FeaturesSection from './components/FeaturesSection';
 import HowItWorks from './components/HowItWorks';
 import SwipeWisePromise from './components/VeloxPromise';
 import SubscribeSection from './components/SubscribeSection';
+import StickyWaitlistCounter from './components/StickyWaitlistCounter';
 import Footer from './components/Footer';
 import { Analytics } from "@vercel/analytics/react"
 
@@ -34,6 +35,7 @@ function App() {
             </main>
 
             <Footer />
+            <StickyWaitlistCounter />
         </div>
     );
 }
